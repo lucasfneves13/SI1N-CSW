@@ -30,6 +30,27 @@
             width: 300px;
             display: inline;
         }
+        .important{
+            color: blue;
+        }
+        #divsimples{
+            background-color: lightcyan;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .divtratada{
+            display: inline-block;
+            background-color: lightcyan;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+        .divtratada:hover > p{
+            background-color: lightgreen;
+            font-weight: bold;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -38,5 +59,10 @@
     <h1>titulo 3</h1>
     <div class="div_">teste</div>
     <div class="div_">teste</div>
+    <div id="divsimples">01</div>
+    <div class="divtratada"><p>02</p></div>
+    <div class="divtratada"><p>03</p></div>
+    <p>Lorem ipsum dolor sits <span class="important">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptatum totam doloribus!</span> 
+        Amet consectetur adipisicing elit. Sunt ut, animi sequi beatae accusamus fuga accusantium possimus quae maxime. Impedit culpa iusto deleniti expedita facilis voluptas provident in eligendi asperiores.</p>
 </body>
 </html>
