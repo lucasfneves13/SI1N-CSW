@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 19</title>
+</head>
+<body>
+    <script type="text/JavaScript">
+        document.writeln("Olá, meu código JavaScript! Usando o Document WriteIn")
+    </script>
+    <h1>Olá Mundo, JavaScript</h1>
+    <p></p>
+    <script>
+        document.writeln("Olá, meu código JavaScript! Usando o Document WriteIn pela segunda vez")
+        /*window.alert("Olá, esse é meu código JavaScript!")*/
+    </script>
+    <hr>
+    <div>
+        <div id="resposta"></div>
+        <p>Teste</p>
+    </div>
+    <script>
+        document.getElementById("resposta").innerHTML = "Esta é a resposta via JavaScript"
+        var nome = "teste" /*window.prompt("Olá, esse é meu código JavaScript")*/
+        document.getElementById("resposta").innerHTML = nome
+    </script>
+    <hr>
+    <div style="border-style: ; 3px solid;">
+        <input id="login" type="text" size="60">
+        <button onclick="validaLogin()">Valida</button>
+    </div>
+    <script>
+        function validaLogin(){
+            var login="";
+            login = document.getElementById("login").value;
+            if (login == "Administrador"){
+                window.alert("Seja bem-vindo, Administrador")
+            }
+            else{
+                window.alert("Não é o Administrador")
+            }
+        }
+    </script>
+     <div style="border-style: ; 3px solid;">
+        <input id="idade" type="text" size="60">
+        <button onclick="validaIdade()">Valida</button>
+    </div>
+    <script>
+        function validaIdade(){
+            var login="";
+            login = document.getElementById("idade").value;
+            if (login == "60"){
+                window.alert("Idoso")
+            }
+            if(login == "10"){
+                window.alert("Criança")
+            }
+            else{
+                window.alert("Adulto")
+            }
+        }
+    </script>
+</body>
+</body>
+</html>
